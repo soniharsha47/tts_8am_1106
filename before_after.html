@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After</title>
+    <style>
+        .box{
+            background-color: bisque;
+        }
+        .box::before{
+            content: "before part";
+            background-color: purple;
+            color: white;
+            display: block;
+            height: 200px;
+        }
+        .box::after{
+            content: "after part";
+            background-color: cyan;
+            display: block;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+    
+</body>
+</html>

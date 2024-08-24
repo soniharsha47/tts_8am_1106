@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click me effect</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            color: goldenrod;
+            font-size: 100px;
+            background-color: black;
+            border: none;
+            cursor: grab;
+            /* display: inline; */
+            /* border: 2px solid white; */
+        }
+        .box::after{
+            content: "";
+            display: block;
+            height: 10px;
+            background-color: goldenrod;
+            transition-duration: 2s;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+        
+        .box:hover::after{
+            transform: scaleX(1);
+        }
+
+    </style>
+</head>
+<body>
+            
+    <button class="box">Click me</button>
+</body>
+</html>

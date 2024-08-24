@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro handling</title>
+</head>
+<body>
+    <h1>Error handling</h1>
+    <div id="print"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eius ipsam accusantium pariatur sequi, magni non consequatur perferendis ratione! Facere atque in voluptas dolorum fugit. Tempore hic exercitationem libero iste laborum quia atque asperiores sed placeat aspernatur quam sapiente quo necessitatibus unde voluptate sit nesciunt fugit error molestias itaque, praesentium dolorum dolores non? Ducimus tenetur voluptates hic excepturi magni, non eius nesciunt pariatur, ipsum animi enim vero facere aliquid. Repellat, soluta delectus autem nesciunt fugit laudantium dolores a nulla quo enim rerum tempore exercitationem assumenda pariatur ex neque unde excepturi ad blanditiis quas tenetur. Consequatur odit ut fugit possimus eligendi minima maxime libero iure dolorem neque accusantium doloribus quod iste ducimus, sint quas error eaque adipisci ipsa non obcaecati? Eius voluptatem temporibus iusto id ea ratione ut recusandae unde accusantium! Debitis ducimus commodi animi quaerat voluptates aut iste deleniti, quos dolorem odit distinctio explicabo alias? Temporibus odit unde maxime, dicta quo atque quis quasi aperiam omnis corporis similique voluptates commodi qui asperiores repellat ab veritatis dolor aut architecto nisi. Repellendus assumenda hic eligendi vitae praesentium quam, voluptas consequatur magni minus illo ullam enim quis expedita quibusdam soluta. Sapiente, non, eius ipsum adipisci cupiditate quibusdam neque officiis delectus doloremque officia alias.</p>
+
+    <script>
+        try{document.getElementById('print').innerHTML=a;}
+        catch(e){
+            document.getElementById('print').innerHTML=e;
+        }
+    </script>
+</body>
+</html>

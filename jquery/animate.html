@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .box{
+            border: 2px solid black;
+            position: relative;
+            height: 200px;
+            /* padding: 1%; */
+            overflow: hidden;
+        }
+        .box1, .box2, .box3{
+            height: 200px;
+            width: 100%;
+            background-color: green;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button>Animation</button> -->
+    <div class="box">
+        <div class="box1">
+             <button id="first">first</button>
+        </div>
+        <div class="box2" style="background-color: bisque;">
+            <button id="second">Second</button>
+        </div>
+        <div class="box3" style="background-color: gray;">
+            <button id="third">Third</button>
+        </div>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            $('#third').click(()=>{
+                $('.box3').animate({left: '-100%'}, 1000);
+            });
+            $('#second').click(()=>{
+                $('.box2').animate({left: '-100%'}, 1000);
+            });
+            $('#first').click(()=>{
+                $('.box3').animate({left: '0'}, 1000);
+            })
+        })
+    </script>
+</body>
+</html>

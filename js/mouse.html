@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse event</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1
+        onmouseenter="this.style.color='gray'"
+        onmouseleave="this.style.color='green'"
+        onmouseup="this.style.color='blue'"
+        onmousedown="this.style.color='red'"
+    >
+        Mouse Event
+    </h1>
+
+    <div>
+        When u want to manipulate current dom u can use "this" insted of "document.getElementById()" <br>
+        
+        onmouseenter = one kind of hover when u hover that mensioned element it will run <br>
+
+        onmouseleave = it will run when u cursor out from mensioned element <br>
+ 
+        onmouseup = it will run when u click on that element <br>
+
+        onmousedown = it wwill run when u press on that element <br>
+
+
+
+    </div>
+
+</body>
+</html>

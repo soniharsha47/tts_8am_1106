@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute & Relative</title>
+    <style>
+        .re{
+            height: 30rem;
+            width: 30vw;
+            background-color: bisque;
+            color: rgb(66, 7, 7);
+            position: relative;
+        }
+        p{
+            position: absolute;
+            background-color: gray;
+            z-index: 0;
+        }
+        .ab{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            color: bisque;
+            position: absolute;
+            top: 10px;
+            left: 10%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="re">
+        <p> Relative element must be a parent of absolute element</p>
+        <div class="ab">Absolute</div>
+    </div>
+</body>
+</html>

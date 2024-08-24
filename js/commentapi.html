@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment API</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+        }
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <form name="f" onsubmit="return apii()" >
+        <input type="text" id="choice" value="5" placeholder="Enter your choice id :" />
+        <input type="submit" />
+    </form>
+    <h1>comment api</h1>
+    <div id="container">
+
+    </div>
+
+    <script>
+        async function  apii() {
+                var api = await fetch("https://jsonplaceholder.typicode.com/comments");
+                var data = await api.json();
+
+                var choice=document.forms['f']['choice'].value;
+
+                console.log(data);
+                var result=''
+                for(i=0;i<data.length;i++){
+                    
+                    if(choice==data[i]['postId']){
+                        result += `
+                            <div class='box'>
+                                <div class='id'>Post ID : ${data[i].postId}</div>
+                                <div class='id'>Comment ID : ${data[i].id}</div>
+                                <div class='id'>Name : ${data[i].name}</div>
+                                <div class='id'>Email : ${data[i].email}</div>
+                                <div class='id'>Comment : ${data[i].body}</div>
+                            </div>
+                        `;
+                        }
+                }
+                document.getElementById("container").innerHTML=result;
+                
+        }
+
+        apii()
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon</title>
+    <style>
+        .face{
+            height: 400px;
+            width: 400px;
+            background-color: maroon;
+            position: relative;
+            top: 150px;
+            left: 500px;
+            border-radius: 50%;
+            /* z-index: 1; */
+        }
+        .face::before{
+            content: "";
+            display: block;
+            height: 150px;
+            width: 150px;
+            background-color: black;
+            border-radius: 50%;
+            /* z-index: 0; */
+            position: absolute;
+            z-index: -1;
+        }
+        .face::after{
+            content: "";
+            display: block;
+            height: 150px;
+            width: 150px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            position: absolute;
+            top:0;
+            left: 270px;
+            z-index: -1;
+        }
+        .eyes{
+            display: flex;
+            position: absolute;
+            top: 120px;
+            left: 100px;
+            width: 200px;
+            /* border: 2px solid black; */
+            justify-content: space-around;
+            z-index: 1;
+        }
+        .lefteye, .righteye{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            /* background-color: black; */
+            border: 10px solid black;
+        }
+        .smile{
+            width: 200px;
+            height: 150px;
+            border-radius: 50%;
+            border-bottom: 20px solid black;
+            position: absolute;
+            left: 100px;
+            top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="face">
+        <div class="eyes">
+            <div class="lefteye"></div>
+            <div class="righteye" style="margin-left: 5%;"></div>
+        </div>
+        <div class="smile"></div>
+    </div>
+    
+</body>
+</html>

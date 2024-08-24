@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Add class using jquery</title>
+    <style>
+        .divv-css{
+            text-align: center;
+            font-size: 100px;
+            color: blue;
+            background-color: bisque;
+        }
+        .h1-css{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <button class="divv">To apply design on div</button>
+    <button class="h11">To apply design on h1</button>
+    <div class="divmain">Lorem, ipsum.</div>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <script>
+        $(document).ready(function(){
+            $('.divv').click(function(){
+                $('.divmain').addClass("divv-css");
+            });
+
+            $('.h11').click(()=>{
+                $('h1').addClass("h1-css");
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+</head>
+<body bgcolor="bisque">
+    <header>
+        <h1><center><u>Grras Solution Pvt. Ltd.</u></center></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

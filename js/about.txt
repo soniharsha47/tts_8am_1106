@@ -1,0 +1,255 @@
+>> About JS :
+  .. no 1 lang.
+  .. Scripting
+  .. Interpreted
+
+
+>> Installation :
+     .. https://nodejs.org/en/download/prebuilt-installer
+
+>> Commands :
+    . pwd
+    . cd
+    . ls
+    . mkdir
+    . clear
+    . node
+
+
+>> DOM - Document Object Model -> HTML+CSS+JS
+>> BOM - Browser Object Model  -> Browser (popus,console, etc)
+
+-------------------------------------------------------------------------------------
+
+>> How to print in JS ?
+   .. console.log('statement');  -> it will print msg
+
+>> Variables :
+    .. container
+    .. to store/contain data
+    .. grras, 2014, solution
+    .. Variables/object/parameter/properties
+
+    .. how to define : 
+
+      1) var
+          var variableName = value;
+              .. global | Old version | Temp
+        
+      2) let 
+          let variableName = value;
+              .. local | new version (ES6-2015) |Temp
+
+      3) const 
+          const variableName = value;
+              .. lcoal | new version (ES6-2015) | Perm
+
+>> Data Types :
+
+      .. Numbers : int/ float etc
+
+      .. string  : '' "" ``
+
+      .. object 
+                : multiple + multy type of data
+
+                ... list / array :  [data1,data2 ....]
+                ... Dictionary   :  {key:value;key1:value1}
+
+      .. Bool  : true(1) | false(0)
+
+>> typeof(statement)   -> it return the data type of given statement
+
+>> Operators :
+            .. arithmatic   -> + - * / ** etc
+            .. assignment   -> = += -= *= etc
+            .. Comparision  -> < > == === etc
+            .. Logical      -> && || ! 
+            .. Bitwise      -> & |
+            .. string       -> +
+            .. typeof       -> typeof() 
+
+>> Function of String:
+ string.function('arguments')
+    String length
+    String slice()
+    String replace()
+    String replaceAll()
+    String toUpperCase()
+    String toLowerCase()
+    String concat()
+    String trim()
+    String trimStart()
+    String trimEnd()
+    String padStart()
+    String padEnd()
+    String charAt()
+    String charCodeAt()
+    String split()
+
+>> Function of array : 
+    concat()	Joins arrays and returns an array with the joined arrays
+    constructor	Returns the function that created the Array object's prototype
+    copyWithin()	Copies array elements within the array, to and from specified positions
+    entries()	Returns a key/value pair Array Iteration Object
+    every()	Checks if every element in an array pass a test
+    fill()	Fill the elements in an array with a static value
+    filter()	Creates a new array with every element in an array that pass a test
+    find()	Returns the value of the first element in an array that pass a test
+    findIndex()	Returns the index of the first element in an array that pass a test
+    forEach()	Calls a function for each array element
+    from()	Creates an array from an object
+    includes()	Check if an array contains the specified element
+    indexOf()	Search the array for an element and returns its position
+    isArray()	Checks whether an object is an array
+    join()	Joins all elements of an array into a string
+    keys()	Returns a Array Iteration Object, containing the keys of the original array
+    lastIndexOf()	Search the array for an element, starting at the end, and returns its position
+    length	Sets or returns the number of elements in an array
+    map()	Creates a new array with the reasult of calling a function for each array element
+    pop()	Removes the last element of an array, and returns that element
+    prototype	Allows you to add properties and methods to an Array object
+    push()	Adds new elements to the end of an array, and returns the new length
+    reduce()	Reduce the values of an array to a single value (going left-to-right)
+    reduceRight()	Reduce the values of an array to a single value (going right-to-left)
+    reverse()	Reverses the order of the elements in an array
+    shift()	Removes the first element of an array, and returns that element
+    slice()	Selects a part of an array, and returns the new array
+    some()	Checks if any of the elements in an array pass a test
+    sort()	Sorts the elements of an array
+    splice()	Adds/Removes elements from an array
+    toString()	Converts an array to a string, and returns the result
+    unshift()	Adds new elements to the beginning of an array, and returns the new length
+    valueOf()	Returns the primitive value of an array
+
+>> Date Methods : 
+    new Date()
+        new Date(date string)
+        new Date(year,month)
+        new Date(year,month,day)
+        new Date(year,month,day,hours)
+        new Date(year,month,day,hours,minutes)
+        new Date(year,month,day,hours,minutes,seconds)
+        new Date(year,month,day,hours,minutes,seconds,ms)
+        new Date(milliseconds)
+
+>> Math :
+        floor(x)	Returns x, rounded downwards to the nearest integer
+        max(x, y, z, ..., n)	Returns the number with the highest value
+        min(x, y, z, ..., n)	Returns the number with the lowest value
+        pow(x, y)	Returns the value of x to the power of y
+        random()	Returns a random number between 0 and 1
+        round(x)	Rounds x to the nearest integer
+
+    abs(x)	Returns the absolute value of x 
+    acos(x)	Returns the arccosine of x, in radians
+    acosh(x)	Returns the hyperbolic arccosine of x
+    asin(x)	Returns the arcsine of x, in radians
+    asinh(x)	Returns the hyperbolic arcsine of x
+    atan(x)	Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+    atan2(y, x)	Returns the arctangent of the quotient of its arguments
+    atanh(x)	Returns the hyperbolic arctangent of x
+    cbrt(x)	Returns the cubic root of x
+    ceil(x)	Returns x, rounded upwards to the nearest integer
+    cos(x)	Returns the cosine of x (x is in radians)
+    cosh(x)	Returns the hyperbolic cosine of x
+    exp(x)	Returns the value of Ex
+    log(x)	Returns the natural logarithm (base E) of x
+    sign(x)	Returns if x is negative, null or positive (-1, 0, 1)
+    sin(x)	Returns the sine of x (x is in radians)
+    sinh(x)	Returns the hyperbolic sine of x
+    sqrt(x)	Returns the square root of x
+    tan(x)	Returns the tangent of an angle
+    tanh(x)	Returns the hyperbolic tangent of a number
+    trunc(x)	Returns the integer part of a number (x)
+
+>> condisions :
+     .. if(condisions) { if true }
+     .. else if(condisions) { if true }
+         ....
+     .. else { defaute  }
+
+>> Loops :
+        .. while()
+                  . startingpoint
+                  . while(endpoint){
+                        . code
+                        . increment/decrement
+                  }
+
+        .. for()
+                    . for(startingpoint;endpoint;increment){statement}
+
+        .. switch()
+                . var/object
+                .switch(object){
+                    case 1:
+                        statement;
+                        break;
+                    case 2 :
+                        statement;
+                        break;
+                    defaute:
+                        statement;
+                        break;
+                }
+
+>> break    -> stop 
+>> continue -> skip/ignore
+
+>> Function : 
+        .. normal function :
+                function funName(){statement}
+        
+        .. arrow function :
+                l/v/c funName=(parameter)=>{statement}
+
+        .. call back : 
+                .. function(){statement};
+                .. ()=>{statement};
+
+---------------------------------------------------------------------------------------
+DOM -> Document Object Model
+    -> Real DOM | Physical DOM
+
+.. print  -> document.write(statement)
+
+.. to print on perfect location :
+             -- document.getElementById(idname).innerHTML/innerText/design
+
+.. to get data from form :
+        -- document.forms[formname][fieldId].value
+
+.. data validation -> 
+        ex: password -> Special character + Upper + lower + number
+            email    -> before @ and after @ there will be text
+            contact num -> only digit
+
+    .. RegEx -> Regular Expression
+             -> search(arguments)
+             -> match(arguments)
+                    -> //g
+                        -> /[A-Z]/g
+                        -> /[a-z]/g
+                        -> /[0-9]/g
+                        -> /[]/g
+
+.. Error Handling : 
+        .. try { code possibly contain error }
+        .. catch(error){ manipulate error }
+
+.. Strict mode :
+        .. Strict 
+        .. tech. prove 
+
+... events :
+
+    .. mouse event
+    .. click event
+    .. online & offline
+
+... Fetch API -> to fetch data from 3rd party server
+
+... SetTimeout -> when u want run some code with delay
+
+.. condisions | loops | functions 

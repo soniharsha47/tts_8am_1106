@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        *{
+            margin: 0;
+            color: white;
+            background-color: rgb(217, 172, 58);
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            background-color: goldenrod;
+        }
+        nav{
+            background-color: rgb(217, 172, 58);
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+        li{
+            padding: 1%;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .admin{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .admin1, .admin2, .admin3{
+            height: 250px;
+            width: 250px;
+            border: 3px solid black;
+            border-radius: 100%;
+        }
+        footer{
+            background-color: goldenrod;
+            text-align: right;
+        }
+
+        /* MEdia query -> tables -> 767px - 1300px */
+        @media (max-width:1300px){
+            *{
+                background-color: gray;
+            }
+            
+        }
+
+        /* 300px - 767px */
+        @media (max-width:767px){
+            *{
+                background-color: pink;
+            }
+            h1{
+                font-size: 20px;
+            }
+            ul{
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grras Solution Pvt. Ltd.</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Gallary</a></li>
+            <li><a href="">Career</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum porro tempora debitis natus eligendi deleniti nisi. Voluptates, minima in sequi modi saepe voluptas, sit illo perferendis, reprehenderit temporibus totam minus quas repellat autem nihil explicabo blanditiis quo. Reprehenderit in, vitae nemo, quisquam consequuntur quaerat, assumenda tempore commodi iusto provident quod a ex beatae quas? Error vel rem amet deleniti voluptatibus inventore iste repellendus, suscipit officia accusantium minima corporis nobis adipisci, deserunt dicta aspernatur laborum quod nulla cumque repellat blanditiis molestiae ipsum. Consectetur, quasi commodi facilis tempora itaque excepturi in. Corrupti laboriosam dolores quo illo laudantium facere debitis velit neque?</p>
+        <div class="admin">
+            <div class="admin1"></div>
+            <div class="admin2"></div>
+            <div class="admin3"></div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2020 Grras Solution Pvt. Ltd.</p>
+    </footer>
+</body>
+</html>

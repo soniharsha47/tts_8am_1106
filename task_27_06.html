@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2706</title>
+    <style>
+        .main{
+            height: 400px;
+            width: 400px;
+            border: 5px solid green;
+        }
+        .sub{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            animation-name: boxx;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes boxx {
+            0%{
+                margin-top: 0;
+                margin-left: 0;
+            }
+            25%{
+                margin-top: 300px;
+                margin-left: 0;
+            }
+            50%{
+                margin-top: 300px;
+                margin-left: 300px;
+            }
+            75%{
+                margin-top: 0;
+                margin-left: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub"></div>
+    </div>
+</body>
+</html>

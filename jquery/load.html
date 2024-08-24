@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>AJAX - Load</title>
+</head>
+<body>
+    <button>to load data</button>
+    <p id="para">Loading.....</p>
+    <p id="para1">Loadinggggg...</p>
+
+    <script>
+        setTimeout(()=>{
+            datashow()
+        },10000)
+
+        function datashow(){
+            $('#para1').load("./data.txt")
+            $("#para").css({"color":"red"})
+        }
+
+        $(document).ready(()=>{
+            $('button').click(()=>{
+                $('#para').load("./data.txt")
+            })
+        }) 
+    </script>
+    
+</body>
+</html>

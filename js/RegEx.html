@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Regular Expression</h1>
+
+    <script>
+        var st = 'Grras@123.com';
+
+        document.write(st.search('@')+'<br/>');
+        // document.write(st.search(/]/g)+'<br/>');
+
+        // var pre = st.search('@')-1
+        // var after = st.search('@')+1
+
+        // document.write(pre + ' ' + after +'<br/>')
+
+        // document.write(st[pre] + '<br/>')
+        // document.write(st[after] + '<br/>')
+
+        if(st[st.search('@')-1]==undefined | st[st.search('@')+1]==undefined){
+            document.write('Invalid email<br/>')
+        }
+        else{
+            document.write('Valid email<br/>')
+        }
+
+        // URL -> http://hostname
+    </script>
+</body>
+</html>

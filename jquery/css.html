@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Css using jquery</title>
+    <style>
+      .box {
+        background-color: red;
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+         <script>
+                function desiignn() {
+                    // alert('done')
+                    var clr = document.forms["des"]["clr"].value;
+                    var height = document.forms["des"]["height"].value;
+
+                    $(".box").css({
+                    "background-color": `${clr}`,
+                    height: `${height}px`,
+                    width: "300",
+                    });
+                    return false;
+                }
+        </script>
+    <form name="des" onsubmit="return desiignn()">
+      <input type="color" id="clr" />
+      <input type="number" id="height" />
+      <input type="submit" />
+    </form>
+
+    <button>click to change bg</button>
+    <div class="box"></div>
+
+                <script>
+                $(document).ready(() => {
+                    $("button").click(function () {
+                    // $('.box').css("background-color","green")
+                    $(".box").css({
+                        "background-color": "green",
+                        height: "300px",
+                        width: "300",
+                    });
+                    });
+                });
+                </script>
+  </body>
+</html>

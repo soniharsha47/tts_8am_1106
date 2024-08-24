@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REgEx</title>
+</head>
+<body>
+    <h1>Password validation</h1>
+
+    <script>
+        var passw = 'AJESDjdsi4567&$()';
+
+        var upper = passw.match(/[A-Z]/g)
+        var lower = passw.match(/[a-z]/g)
+        var number = passw.match(/[0-9]/g)
+        var special = passw.match(/[!-.:-@[-`{-~]/g)
+        document.write(`${upper} <br/> ${lower} <br/> ${number} <br/> ${special} <br/><br/>`)
+
+        if(upper==null){
+            document.write('No upper case')
+        }
+        else if(lower==null){
+            document.write('No lower case')
+        }
+        else if(number==null){
+            document.write('No number')
+        }
+        else if(special==null){
+            document.write('No special character')
+        }
+        else{
+            document.write('Password is valid')
+        }
+
+        // if(upper==null | lower==null | special==null | number==null)
+
+        // Tel -> Only digits
+    </script>
+    
+</body>
+</html>

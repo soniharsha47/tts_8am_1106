@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute and relative</title>
+    <style>
+        .paraent{
+            background-color: gray;
+            height: 300px;
+            width: 400px;
+            position: relative;
+            z-index: 3;
+        }
+        .box1{
+            height: 300px;
+            width: 300px;
+            background-color: gray;
+            position: absolute;
+            top: 0px;
+            /* border: 2px solid black; */
+            left: 100px;
+            z-index: 2;
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: palegreen;
+            position: absolute;
+            transform: rotate(40deg);
+            top: 50px;
+            left: 250px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="paraent">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+</body>
+</html>
